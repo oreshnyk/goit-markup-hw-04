@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Студия</title>
+</head>
+<body>
+    <header>
+        <div class="container navigation">
+            <!-- Главная навигация -->
+            <nav class="main-nav">
+            <!-- Лого -->
+                <a href="/" class="logo-header">Web<span class="logo-black">Studio</span></a>
+                <!-- Навигация на другие страницы -->
+                <ul class="site-nav list">
+                    <li class="item"><a href="./index.html" class="link current">Студия</a></li>
+                    <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                    <li class="item"><a href="./contacts" class="link">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="contact list">
+                    <!-- Ссылка на адрес электронной почты  -->
+                <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <!-- Ссылка на телефонный номер -->
+                <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+        </div>
+    </header>
+        <main>
+            <!-- Кнопка в шапке -->
+            <section class="hero">
+                <h1 class="hero-heading">Эффективные решения <br> для вашего бизнеса</h1>
+                <button class="hero-button" type="button"><span class="button-center">Заказать услугу</span></button>
+            </section>
+
+            <!-- Особенности -->
+            <section class="features section">
+                <div class="container">
+                <h2 class="title hide">Особенности</h2>
+                <ul class="list">
+                    <div class="feature-card">
+                        <li>
+                        <h3 class="feature-title">Внимание к деталям</h3>
+                        <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                        </li>
+                    </div>
+                    <div class="feature-card">
+                        <li>
+                        <h3 class="feature-title">Пунктуальность</h3>
+                        <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                        </li>
+                    </div>
+                    <div class="feature-card">
+                        <li>
+                        <h3 class="feature-title">Планирование</h3>
+                        <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                        </li>
+                    </div>
+                    <div class="feature-card">
+                        <li>
+                        <h3 class="feature-title">Современные технологии</h3>
+                        <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                        </li>
+                    </div>
+                </ul>
+                </div>
+            </section>
+            
+            <!-- Чем мы занимаемся -->
+            <section class="work section">
+                <div class="container">
+                <h2 class="title">Чем мы занимаемся</h2>
+                <ul class="list">
+                    <div class="work-item"><li class="item"><img class="img-no-gap" src="images/img1.jpg" alt="Server code" width="370" /></li></div>
+                    <div class="work-item"><li class="item"><img class="img-no-gap" src="images/img2.jpg" alt="Mobile App" width="370" /></li></div>
+                    <div class="work-item"><li class="item"><img class="img-no-gap" src="images/img3.jpg" alt="Design" width="370" /></li></div>
+                </ul>
+                </div>
+            </section>
+            
+            <!-- Наша команда -->
+            <section class="team section">
+                <div class="container">
+                <h2 class="title">Наша команда</h2>
+                <ul class="list">
+                    <div class="card">
+                        <li class="item">
+                            <img class="img-no-gap" src="images/imgpd.jpg" alt="Product Designer" width="270" />
+                            <div class="bottom-card">
+                            <h3 class="member-title product-designer">Игорь Демьяненко</h3>
+                            <p class="text">Product Designer</p>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="card">
+                        <li class="item">
+                            <img class="img-no-gap" src="images/imgfd.jpg" alt="Frontend Developer" width="270" />
+                            <div class="bottom-card">
+                            <h3 class="member-title frontend-developer">Ольга Репина</h3>
+                            <p class="text">Frontend Developer</p>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="card">
+                        <li class="item">
+                            <img class="img-no-gap" src="images/imgmark.jpg" alt="Marketing" width="270" />
+                            <div class="bottom-card">
+                            <h3 class="member-title marketing">Николай Тарасов</h3>
+                            <p class="text">Marketing</p>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="card">
+                        <li class="item">
+                            <img class="img-no-gap" src="images/imguid.jpg" alt="UI Designer" width="270" />
+                            <div class="bottom-card">
+                            <h3 class="member-title designer">Михаил Ермаков</h3>
+                            <p class="text">UI Designer</p>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+            <!-- Лого -->
+            <a href="/" class="logo-footer">Web<span class="logo-white">Studio</span></a>
+            <address>
+                <ul class="address list">
+                    <!-- Ссылка на на карту с указанным адресом -->
+                    <li class="item"><a class="map" href="https://goo.gl/maps/9BJSukgXdeU1Tu847" target="_blank" rel="noopener">г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <!-- Ссылка на адрес электронной почты  -->
+                    <li class="item"><a class="link" href="mailto:info@example.com">info@example.com</a></li>
+                    <!-- Ссылка на телефонный номер -->
+                    <li class="item"><a class="link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                </ul>
+            </address>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
