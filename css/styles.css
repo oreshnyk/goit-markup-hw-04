@@ -60,6 +60,10 @@ p {
   display: block;
 }
 
+.vector {
+  display: block;
+}
+
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -289,7 +293,7 @@ p {
 .feature-card {
   width: 270px;
 
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   margin-right: 30px;
 }
@@ -328,6 +332,34 @@ p {
 }
 
 /* Work */
+
+.list-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-background-color);
+}
+
+.icon-antenna::before {
+  background-image: url(../images/antenna\ 1.png);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock\ 1.png);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram\ 1.png);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/astronaut\ 1.png);
+}
 
 .project {
   display: flex;
@@ -540,6 +572,24 @@ p {
   line-height: 30px;
 
   letter-spacing: 0.03em;
+}
+
+/* Clients */
+
+.clients .title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+
+.clients .list {
+  margin-top: 50px;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Footer */
