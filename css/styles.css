@@ -292,9 +292,6 @@ p {
 
 .feature-card {
   width: 270px;
-
-  display: block;
-  flex-wrap: wrap;
   margin-right: 30px;
 }
 
@@ -333,13 +330,13 @@ p {
 
 /* Work */
 
-.list-item::before {
+.feature-card::before {
   display: block;
   content: "";
   height: 120px;
   margin-bottom: 30px;
 
-  background-size: contain;
+  /* background-size: contain; */
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--secondary-background-color);
@@ -361,7 +358,7 @@ p {
   background-image: url(../images/astronaut\ 1.png);
 }
 
-.project {
+.project-item {
   display: flex;
   flex-wrap: wrap;
 
@@ -370,7 +367,7 @@ p {
   margin-top: 30px;
   margin-right: 30px;
 }
-.project:nth-child(3n) {
+.project-item:nth-child(3n) {
   margin-right: 0px;
 }
 
@@ -423,13 +420,11 @@ p {
   background-color: var(--secondary-background-color);
 }
 
-.team .card {
+.item-card {
   width: 270px;
-
   background: #ffffff;
-
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -470,14 +465,11 @@ p {
   letter-spacing: 0.03em;
 }
 
-.list .card {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 30px;
+.list .item-card {
   margin-right: 30px;
 }
 
-.card:nth-child(4n) {
+.list .item-card:nth-child(4n) {
   margin-right: 0px;
 }
 
@@ -621,7 +613,53 @@ p {
   color: var(--primary-text-color);
 }
 
-.project-cards a:hover,
-.project-cards a:focus {
-  color: var(--accent-color);
+/* Icons sprite */
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-brand {
+  width: 1.7666015625em;
+}
+
+.icon-company {
+  width: 1.7666015625em;
+}
+
+.icon-compbox {
+  width: 1.7666015625em;
+}
+
+.icon-envelope {
+  width: 1.3330078125em;
+}
+
+.icon-foster {
+  width: 1.7666015625em;
+}
+
+.icon-phone {
+  width: 0.625em;
+}
+
+.icon-tagline {
+  width: 1.7666015625em;
+}
+
+.icon-yaco {
+  width: 1.7666015625em;
 }
