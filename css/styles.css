@@ -331,6 +331,10 @@ p {
 
 /* Work */
 
+.work {
+  padding-top: 0px;
+}
+
 .feature-card::before {
   display: block;
   content: "";
@@ -473,7 +477,7 @@ p {
   padding: 30px 0px;
 }
 
-/* 4-ое ДЗ делаю */
+/* ДЗ на проверке */
 
 .item-card .social {
   margin-right: 10px;
@@ -520,7 +524,7 @@ p {
   border-radius: 50%;
 }
 
-/* Все еще делаю ДЗ! */
+/* Эта часть на проверке */
 
 /* Button */
 
@@ -631,6 +635,44 @@ p {
   flex-wrap: wrap;
 }
 
+.clients li {
+  width: 170px;
+  height: 92px;
+  margin-right: 30px;
+}
+
+.clients li:nth-child(6n) {
+  margin-right: 0px;
+}
+
+.clients svg {
+  padding: 16px 32px;
+  width: 170px;
+  height: 92px;
+
+  outline: 1px solid var(--icon-primary-color);
+  border-radius: 4px;
+}
+
+/* .clients a {
+  display: flex;
+  width: 106px;
+  height: 60px;
+} */
+
+.client-icon {
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  color: var(--accent-color);
+  fill: var(--icon-primary-color);
+}
+
+.client-icon:hover {
+  fill: currentColor;
+  outline-color: var(--accent-color);
+}
+
 /* Footer */
 
 .address .item + .item {
@@ -679,7 +721,7 @@ Single-colored icons can be modified like so:
 }
 ========================================== */
 
-.icon-brand {
+/* .icon-brand {
   width: 1.7666015625em;
 }
 
@@ -709,4 +751,4 @@ Single-colored icons can be modified like so:
 
 .icon-yaco {
   width: 1.7666015625em;
-}
+} */
