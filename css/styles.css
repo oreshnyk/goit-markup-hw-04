@@ -40,6 +40,9 @@ address {
   margin-top: 20px;
 }
 
+.wraper {
+}
+
 ul {
   padding-inline-start: 0px;
   margin-block-start: 1em;
@@ -72,6 +75,7 @@ p {
 }
 
 .footer .container {
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -187,7 +191,7 @@ p {
 .contact {
   display: flex;
   align-items: center;
-  margin-left: 331px;
+  margin-left: 305px;
 
   font-weight: 500;
   font-size: 14px;
@@ -196,7 +200,7 @@ p {
 }
 
 .contact .item + .item {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .site-nav .link {
@@ -212,6 +216,8 @@ p {
   color: var(--accent-color);
 }
 .contact .link {
+  align-items: center;
+  display: flex;
   padding: 32px 0;
   text-decoration: none;
   color: var(--primary-text-color);
@@ -220,9 +226,6 @@ p {
 .contact .link:focus {
   color: var(--accent-color);
 }
-
-/* .envelop-icon {
-} */
 
 /* Hero */
 
@@ -522,6 +525,9 @@ li.project-item:hover {
 }
 
 .social .link {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+
   width: 44px;
   height: 44px;
   display: flex;
@@ -538,8 +544,17 @@ li.project-item:hover {
 }
 
 .mail-icon {
+  margin-right: 10px;
   width: 16px;
   height: 12px;
+  color: var(--white-color);
+  fill: var(--icon-primary-color);
+}
+
+.phone-icon {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
   color: var(--white-color);
   fill: var(--icon-primary-color);
 }
@@ -718,6 +733,36 @@ p {
 .address .link:focus {
   color: var(--accent-color);
 }
+
+.join {
+  margin-left: 70px;
+  margin-top: 12px;
+}
+
+.join .list {
+  display: flex;
+}
+
+.join-heading {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.join .socials {
+  margin-top: 20px;
+}
+
+.join .social {
+  margin-right: 10px;
+}
+
+.join .social:nth-child(4n) {
+  margin-right: 0px;
+}
+
 .project-cards a {
   text-decoration: none;
   color: var(--primary-text-color);
