@@ -76,6 +76,7 @@ p {
 
 .footer .container {
   display: flex;
+  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -349,7 +350,23 @@ p {
   padding-top: 0px;
 }
 
-.feature-card::before {
+.thumb {
+  background: var(--secondary-background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.feature-icon {
+  width: 70px;
+  height: 70px;
+  color: var(--white-color);
+  fill: var(--icon-primary-color);
+}
+
+/* .feature-card::before {
   display: block;
   content: "";
   height: 120px;
@@ -374,7 +391,7 @@ p {
 
 .icon-astronaut::before {
   background-image: url(../images/astronaut\ 1.png);
-}
+} */
 
 li.project-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -478,6 +495,7 @@ li.project-item:hover {
 }
 
 .team .text {
+  margin-top: 10px;
   font-size: 16px;
   line-height: 1.18;
 
@@ -511,6 +529,10 @@ li.project-item:hover {
   align-items: center;
   justify-content: center;
   padding: 0;
+  margin-top: 16px;
+}
+
+.socials.list {
   margin-top: 16px;
 }
 
@@ -742,7 +764,6 @@ p {
 
 .join {
   margin-left: 70px;
-  margin-top: 12px;
 }
 
 .join .list {
@@ -772,6 +793,10 @@ p {
 .project-cards a {
   text-decoration: none;
   color: var(--primary-text-color);
+}
+
+footer .social-icon {
+  fill: var(--white-color);
 }
 
 /* Icons sprite */
