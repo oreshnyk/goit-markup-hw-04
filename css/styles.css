@@ -675,6 +675,9 @@ p {
 }
 
 .clients li {
+  margin-right: 30px;
+
+  position: relative;
   width: 170px;
   height: 92px;
   margin-right: 30px;
@@ -685,24 +688,33 @@ p {
 }
 
 .clients svg {
-  padding: 16px 32px;
-  width: 170px;
-  height: 92px;
-
-  outline: 1px solid var(--icon-primary-color);
   border-radius: 4px;
 }
 
-/* .clients a {
-  display: flex;
-  width: 106px;
-  height: 60px;
-} */
+.client-thumb {
+  outline: 1px solid var(--icon-primary-color);
+  border-radius: 4px;
+
+  background-color: var(--white-color);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.client .link:hover .client-thumb {
+  fill: var(--accent-color);
+  outline-color: var(--accent-color);
+}
+
+.client .link:focus .client-thumb {
+  fill: var(--accent-color);
+  outline-color: var(--accent-color);
+}
 
 .client-icon {
-  padding: 12px;
-  width: 44px;
-  height: 44px;
+  width: 106px;
+  height: 60px;
   color: var(--accent-color);
   fill: var(--icon-primary-color);
 }
